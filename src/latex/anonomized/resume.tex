@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Manu Cherthedath
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Zaphod Beeblebrox} \\ \vspace{1pt}
+    \small +1 777-777-7777 $|$ \href{mailto:manu@manu.ac}{\underline{zaphod@zaphod.com}} $|$ 
+    \href{https://github.com/...}{\underline{github.com/zaphod}}
+\end{center}
+
+\section{Summary}
+ DevOps/Cloud Engineer with 4 years of experience building fully automated, highly scalable infrastructure on AWS for high throughput Machine Learning workflows using Kubernetes and Airflow.
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cloud Engineering/DevOps Contractor}{October 2020 -- Mach 2023}
+      {Biotech Company 1}{Earth}
+      \resumeItemListStart
+        \resumeItem{Designed, implemented and maintained cloud infrastructure for a high throughput Machine Learning workflows}
+        \resumeItem{Collaborated with machine learning team to eliminate performance bottlenecks, and scale application performance}
+        \resumeItem{Identified key performance bottleneck within preprocessing pipeline using Grafana, Prometheus, and Loki}
+        \resumeItem{Collaborated with software engineering team to prototype multi node dask clusters on Kubernetes}
+        \resumeItem{Identified and implemented solutions for issues relating to scaling cluster to 1000+ pods on hundreds of nodes}
+        \resumeItem{Deployed multi node dask solution, resulting in 100x speedup in preprocessing pipeline}
+        \resumeItem{Identified friction points with general user access to cloud resources}
+        \resumeItem{Met with various internal teams, collected user stories, and designed systems and processes to improve UX}
+        \resumeItem{Collaborated with external vendors to rapidly implement and ArgoWorkflows based machine learning pipelines, leveraging ArgoCD for deployment and automation}
+        \resumeItem{Implemented CI system levergaing Drone CI, and GitLab CI}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Cloud Engineer/DevOps}{April 2019 -- September 2020}
+      {Biotech Company 2}{Earth}
+      \resumeItemListStart
+        \resumeItem{Collaborated with software engineering team to design and build a data analytics platform leveraging Kubernetes, Airflow, AWS Lambda, S3, EC2, VPC, and RDS PostgreSQL}
+        \resumeItem{Several EBS volumes were being used as the primary data store for an application}
+        \resumeItem{Recognized AWS EFS Infrequent Access as a potential solution to reduce costs}
+        \resumeItem{Protoyped, and implemented EFS Infrequent Access, resulting in 75\% cost savings, and achieved better scalability}
+        \resumeItem{Setup, and maintained Docker containers, and docker compose configurations used by developers for local development}
+        \resumeItem{Collaborated with machine learning engineers to identify performance bottlenecks using Tensorboard}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Solar Car Team}{February 2018 -- September 2021}
+      {Firmware engineer, SysAdmin}{Earth}
+      \resumeItemListStart
+        \resumeItem{Led the embedded software engineering team in the development of low-latency safety critical software for monitoring the car}
+        \resumeItem{Implemented, and maintained HPC infrastructure used for Ansys CFD simulations, using Slurm and Torq}
+        \resumeItem{Implemented features for website, using HTML, CSS, and JavaScript}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, Java, Bash, SQL (Postgres), JavaScript, HTML/CSS} \\
+     \textbf{Containers}{: Docker, Kubernetes, EKS, Helm} \\
+     \textbf{AWS}{: EC2, S3, SQS, Lambda, RDS, Aurora, EKS, ECR, } \\
+     \textbf{CI/CD}{: Gitlab CI, Github Actions, Drone CI, ArgoCD} \\
+     \textbf{Frameworks}{: Airflow, Dask, React, Flask} \\
+     \textbf{Monitoring}{: Prometheus, Grafana, Loki, Cloudwatch, TensorBoard} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Earth}{Earth}
+      {Honours Bachelor of Science in Computer Science}{}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
